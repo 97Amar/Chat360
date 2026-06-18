@@ -1,0 +1,61 @@
+@use '../../assets/theme/var' as *;
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background: $header-bg;
+    border-bottom: 1px solid $header-border;
+    flex-shrink: 0;
+
+    &__brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        image-rendering: auto;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        color: $header-text;
+        margin: 0;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: $brand-primary;
+        border: none;
+        color: $color-white;
+        cursor: pointer;
+        padding: 6px 12px;
+        border-radius: $radius-sm;
+        font-size: 13px;
+        font-family: $font-sans;
+        font-weight: 500;
+        transition: background 0.15s, transform 0.1s;
+
+        &:hover {
+            opacity: 0.9;
+            background-color: $brand-primary-hover;
+        }
+
+        &--clear {
+            margin-left: 4px;
+        }
+    }
+}
+

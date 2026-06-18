@@ -1,0 +1,123 @@
+@use '../../assets/theme/var' as *;
+
+.message-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 6px 20px;
+
+  &--user {
+    flex-direction: row-reverse;
+  }
+}
+
+.avatar {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-white;
+
+  &--bot {
+    background: $bot-avatar-bg;
+  }
+
+  &--user {
+    background: $user-avatar-bg;
+  }
+
+  &--error {
+    background: $error-icon-bg;
+  }
+}
+
+.message-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 68%;
+
+  &--user {
+    align-items: flex-end;
+  }
+
+  &--assistant {
+    align-items: flex-start;
+  }
+}
+
+.message__timestamp {
+  font-size: $timestamp-size;
+  color: $timestamp-color;
+  padding: 0 4px;
+}
+
+.bubble {
+  padding: 12px 16px;
+  line-height: 1.55;
+  font-size: 14px;
+  box-shadow: $shadow-bubble;
+  word-break: break-word;
+
+  &--user {
+    background: $user-bubble-bg;
+    color: $user-bubble-text;
+    border-radius: #{$user-bubble-radius};
+  }
+
+  &--assistant {
+    background: $assistant-bubble-bg;
+    border: 1px solid $assistant-bubble-border;
+    color: $assistant-bubble-text;
+    border-radius: #{$assistant-bubble-radius};
+    min-height: 44px;
+  }
+
+  &--error {
+    background: $error-bg;
+    border: 1px solid $error-border;
+    border-radius: $radius-md;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+    padding: 14px 16px;
+
+    &__header {
+      font-size: 14px;
+      font-weight: 600;
+      color: $error-title;
+    }
+
+    &__body {
+      font-size: 13px;
+      color: $error-text;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    &__retry {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      align-self: flex-end;
+      background: transparent;
+      border: 1.5px solid $error-title;
+      color: $error-title;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: $radius-sm;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+
+      &:hover {
+        background: $error-title;
+        color: $color-white;
+      }
+    }
+  }
+}

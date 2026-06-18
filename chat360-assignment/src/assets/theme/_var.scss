@@ -1,0 +1,88 @@
+$font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+// --- Brand Colors ---
+$brand-primary: #5c5fef;
+$brand-primary-hover: #4649d4;
+$brand-primary-light: rgba(92, 95, 239, 0.1);
+
+// --- Header ---
+$header-bg: #ffffff;
+$header-text: #000000;
+$header-border: #e8eaed;
+$header-btn-bg: #7c87c3;
+
+// --- Layout ---
+$chat-bg: #f4f5f7;
+$chat-panel-bg: #ffffff;
+$side-panel-bg: #f8f9fc;
+$side-panel-border: #e8eaed;
+
+// --- User bubble ---
+$user-bubble-bg: #ededf8;
+$user-bubble-text: #1a1d2e;
+$user-bubble-radius: 18px 18px 4px 18px;
+
+// --- Assistant bubble ---
+$assistant-bubble-bg: #ffffff;
+$assistant-bubble-border: #e8eaed;
+$assistant-bubble-text: #1a1d2e;
+$assistant-bubble-radius: 18px 18px 18px 4px;
+
+// --- Avatar ---
+$bot-avatar-bg: $brand-primary;
+$bot-avatar-size: 36px;
+$user-avatar-bg: #a8b0c8;
+$user-avatar-size: 36px;
+
+// --- Error bubble ---
+$error-bg: #fff5f5;
+$error-border: rgba(239, 68, 68, 0.25);
+$error-title: #dc2626;
+$error-text: #6b7280;
+$error-icon-bg: #ef4444;
+
+// --- Composer ---
+$composer-bg: #ffffff;
+$composer-border: #e8eaed;
+$composer-input-bg: #f8f9fc;
+$composer-placeholder: #9ca3af;
+$composer-text: #1a1d2e;
+$composer-shadow: 0 -2px 12px rgba(0, 0, 0, 0.04);
+$composer-disabled-btn: #c7c8f0;
+
+// --- Status colors ---
+$status-connected: #22c55e;
+$status-streaming: $brand-primary;
+$status-error: #ef4444;
+
+// --- Timestamp ---
+$timestamp-color: #9ca3af;
+$timestamp-size: 11px;
+
+// --- Muted text ---
+$text-muted: #9ca3af;
+$text-secondary: #6b7280;
+$text-primary: #374151;
+$color-white: #ffffff;
+
+// --- Typing indicator dots ---
+$dot-color: #9ca3af;
+$dot-size: 6px;
+
+// --- Scrollbar ---
+$scrollbar-thumb: #e0e2e8;
+
+// --- Shadows ---
+$shadow-bubble: 0 1px 3px rgba(0, 0, 0, 0.06);
+$shadow-composer: 0 -2px 12px rgba(0, 0, 0, 0.04);
+$shadow-side-panel: -1px 0 0 $side-panel-border;
+
+// --- Scroll button ---
+$scroll-btn-bg: $brand-primary;
+$scroll-btn-color: #ffffff;
+
+// --- Border radius ---
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 16px;
+$radius-xl: 20px;
